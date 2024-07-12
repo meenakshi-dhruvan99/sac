@@ -1,0 +1,77 @@
+.awards-container {
+    perspective: 500px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .awards-board {
+    transform: rotateY(10deg);
+    transform-style: preserve-3d; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    max-width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden; 
+  }
+  
+  .awards-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff; 
+  }
+  
+  .awards-list {
+    max-height: 300px; 
+    overflow-y: auto;
+  }
+  
+  .award-item {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /*Semi-transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .award-year {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .award-title {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+
+  
+  
+
+
+  
+  
+
+
+/* Custom styling for the scroll bar */
+.awards-list::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .awards-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Track color (light gray) */
+  }
+  
+  .awards-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Thumb color (darker gray) */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid transparent; /* Transparent border */
+  }
+  
+  .awards-list::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); /* Darker color on hover */
+  }
+  
+  .awards-list::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0.1); /* Scrollbar corner color (light gray) */
+  }
